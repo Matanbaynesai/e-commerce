@@ -5,7 +5,7 @@ import { sliderItems } from "../data";
 
 const Container = styled.div`
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	display: flex;
 	position: relative;
 	overflow: hidden;
@@ -29,8 +29,9 @@ const Arrow = styled.div`
 	opacity: 0.5;
 `;
 const Wrapper = styled.div`
-	height: 80%;
+	height: 100%;
 	display: flex;
+    transition: all 1.5s ease ;
 	transform: translateX(${(props)=>props.slideIndex * -100}vw);
 `;
 const Slide = styled.div`
@@ -50,6 +51,7 @@ const Image = styled.img`
 const InfoContainer = styled.div`
 	flex: 1;
 	padding: 50px;
+	color:white;
 `;
 const Title = styled.h1`
 	font-size: 70px;
