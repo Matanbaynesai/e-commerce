@@ -15,6 +15,6 @@ const Container = styled.div`
 
 export const Annoncement = () => {
   return (
-    <Container>Some greeaat Annoncment about deals Over 50$ !!!</Container>
+    <Container>Some greeaat Annoncment about deals Over $50 !!!</Container>
   )
 } 

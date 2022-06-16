@@ -1,5 +1,5 @@
 import { Badge } from "@material-ui/core";
-import { Search,ShoppingCartOutlined } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 
@@ -23,9 +23,9 @@ const Center = styled.div`
 `;
 const Right = styled.div`
 	flex: 1;
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 `;
 const Language = styled.span`
 	font-size: 14px;
@@ -47,7 +47,7 @@ const Logo = styled.h1`
 const ManuItem = styled.div`
 	font-size: 14px;
 	cursor: pointer;
-    margin-left:25px;
+	margin-left: 25px;
 `;
 
 export const Navbar = () => {
@@ -58,7 +58,7 @@ export const Navbar = () => {
 					<Language>EN</Language>
 					<SearchContainer>
 						<Input />
-						<Search style={{color:"grey", fontSize:16}}/>
+						<Search style={{ color: "grey", fontSize: 16 }} />
 					</SearchContainer>
 				</Left>
 				<Center>
@@ -68,8 +68,8 @@ export const Navbar = () => {
 					<ManuItem>Register</ManuItem>
 					<ManuItem>Sign In</ManuItem>
 					<ManuItem>
-						<Badge badgeContent={4} color="primary">
-                            <ShoppingCartOutlined/>
+						<Badge overlap="rectangular" badgeContent={4} color="primary">
+							<ShoppingCartOutlined />
 						</Badge>
 					</ManuItem>
 				</Right>

@@ -1,5 +1,5 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 
@@ -71,6 +71,13 @@ const Button = styled.button`
 
 export const Slider = () => {
     const [slideIndex , setSlideIndex] = useState(0);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setSlideIndex(slideIndex < 2  && slideIndex + 1)
+		}, 5000);
+	  }, [slideIndex]);
+
     const handleClick = (direction) => {
         if(direction === "left"){
             setSlideIndex(slideIndex > 0 ? slideIndex -1 :2)

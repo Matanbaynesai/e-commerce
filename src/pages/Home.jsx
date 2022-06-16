@@ -12,11 +12,11 @@ const Home = () => {
 		<div>
 			<Annoncement />
 			<Navbar />
-      <Slider/>
-      <Categories/>
-      <Products/>
-	  <NewsLetter/>
-	  <Footer/>
+			<Slider />
+			<Categories />
+			<Products />
+			<NewsLetter />
+			<Footer />
 		</div>
 	);
 };
