@@ -51,7 +51,7 @@ export const Product = () => {
 						adipisicing elit. Porro, laborum enim? Quae ducimus maiores
 						assumenda id placeat ut non voluptatibus.
 					</Desc>
-					<Price>$20</Price>
+					{/* <Price>$20</Price> */}
 				</InfoContainer>
 			</Wrapper>
 			<NewsLetter />
