@@ -51,7 +51,18 @@ export const Product = () => {
 						adipisicing elit. Porro, laborum enim? Quae ducimus maiores
 						assumenda id placeat ut non voluptatibus.
 					</Desc>
-					{/* <Price>$20</Price> */}
+					<Price>$20</Price>
+					<FilterContainer>
+						<Filter>
+							<FilterTitle>Color:</FilterTitle>
+							<FilterColor color="black"/>
+							<FilterColor color="darkblue"/>
+							<FilterColor color="grey"/>
+						</Filter>
+						<Filter>
+							<FilterTitle>Size</FilterTitle>
+						</Filter>
+					</FilterContainer>
 				</InfoContainer>
 			</Wrapper>
 			<NewsLetter />
