@@ -32,6 +32,13 @@ const Desc = styled.p`
 const Price = styled.span`
     font-size:50px ;
 `;
+const FilterContainer = styled.div``
+const Filter = styled.div``
+const FilterTitle = styled.div``
+const FilterColor = styled.div``
+const FilterSize = styled.div``
+const FilterSizeOption = styled.div``
+
 
 export const Product = () => {
 	return (
@@ -61,6 +68,14 @@ export const Product = () => {
 						</Filter>
 						<Filter>
 							<FilterTitle>Size</FilterTitle>
+							<FilterSize>
+								<FilterSizeOption>XS</FilterSizeOption>
+								<FilterSizeOption>S</FilterSizeOption>
+								<FilterSizeOption>M</FilterSizeOption>
+								<FilterSizeOption>L</FilterSizeOption>
+								<FilterSizeOption>XL</FilterSizeOption>
+								<FilterSizeOption>XXL</FilterSizeOption>
+							</FilterSize>
 						</Filter>
 					</FilterContainer>
 				</InfoContainer>

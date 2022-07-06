@@ -39,7 +39,7 @@ const Button = styled.button`
     cursor:pointer;
 `;
 
-export const CategoryItem = ({ item }) => {
+export const CategoryItem = ({ item } ) => {
 	return (
 		<Container>
 			<Image src={item.img} />

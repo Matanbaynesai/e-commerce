@@ -15,7 +15,6 @@ export const Categories = () => {
         {
             categories.map((item)=> {
                 return(
-
                     <CategoryItem key={item.id} item={item}/>
                 )
             })
