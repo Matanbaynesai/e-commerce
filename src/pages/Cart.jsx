@@ -5,10 +5,12 @@ import styled from "styled-components";
 // import { Title } from '@material-ui/icons';
 import { Footer } from "../components/Footer";
 import { Add, Remove } from "@material-ui/icons";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
 	padding: 20px;
+    ${mobile({padding:"10px"})}
 `;
 const Title = styled.h1`
 	font-weight: 300;
@@ -29,7 +31,9 @@ const TopButtom = styled.button`
 	border: ${(props) => props.type === "filled" && "none"};
 	color: ${(props) => props.type === "filled" && "white"};
 `;
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+    ${mobile({display:"none"})}
+`;
 const TopText = styled.span`
 	text-decoration: underline;
 	cursor: pointer;
@@ -37,6 +41,7 @@ const TopText = styled.span`
 const Buttom = styled.div`
 	display: flex;
 	justify-content: space-between;
+    ${mobile({flexDirection:"column"})}
 `;
 const Info = styled.div`
 	flex: 3;
@@ -45,6 +50,7 @@ const Info = styled.div`
 const Product = styled.div`
 	display: flex;
 	justify-content: space-between;
+    ${mobile({flexDirection:"column"})}
 `;
 const ProductDetail = styled.div`
 	flex: 2;
@@ -87,6 +93,7 @@ const ProductAmount = styled.div`
 `;
 const ProductPrice = styled.div`
 	font-size: 30px;
+    ${mobile({marginBottom:"20px"})}
 `;
 
 const Hr = styled.hr`

@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
-	width: 100vw;
+	width: 98.9vw;
 	height: 100vh;
 	background: url("https://img1.wallspic.com/crops/9/2/6/3/23629/23629-monochrome_mode-model-woman-singer-girl-2560x1600.jpg") center;
 	background-repeat: no-repeat;
@@ -16,6 +17,8 @@ const Wrapper = styled.div`
 	padding: 20px;
 	font-size: 20px;
 	font-weight: 300;
+    ${mobile({width:"70%"})}
+
 `;
 const Title = styled.h1`
 	font-size: 30px;
