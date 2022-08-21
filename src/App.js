@@ -13,12 +13,12 @@ const FilterContainer = styled.div``
 function App() {
   return (
     <div>
-      <Cart/>
+      {/* <Cart/>
       <Login/>
-      <Register/>
+      <Register/> */}
      <Home/>
-     <ProductList/>
-     <Product/>
+     {/* <ProductList/>
+     <Product/> */}
     </div>
   );
 }
